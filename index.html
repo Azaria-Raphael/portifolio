@@ -1,69 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width">
-        <meta charset="UTF-8">
-        <title>Raphael Portifolio</title>
-        <link rel="stylesheet" href="all.min.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Raphael Portfolio</title>
+    <link rel="stylesheet" href="all.min.css"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Raphael Azaria</div>
+        <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox">
+        <label for="mobile-menu-toggle" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
 
-        <nav>
-            <div class="logo"> Raphael Azaria </div>
-            <ul class="nav-links">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li> <a href="#blog">BLOG</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-
+    <main>
         <section id="home">
-            <img id="profile" src="images/Picsart_25-01-04_23-21-16-471.jpg" alt="Raphael's profile">
-            <div class="home-content">
-                <h1>Hello, I'm <span>Raphael</span></h1>
-            <p>Web Developer|C++ programmer|Graphics Designer</p>
-            <a href="#projects" class="btn">View projects</a><br>
-            <a href="#contact" class="cta-button">Contact Me</a>
-            </div> 
+            <div class="home-container">
+                <div class="home-text-content">
+                    <h1>Hello, I'm <span>Raphael</span></h1>
+                    <p>Web Developer | C++ Programmer | Graphics Designer</p>
+                    <div class="home-buttons">
+                        <a href="#projects" class="btn">View Projects</a>
+                        <a href="#contact" class="cta-button">Contact Me</a>
+                    </div>
+                </div>
+                <div class="home-image-content">
+                    <img id="profile" src="images/Picsart_25-01-04_23-21-16-471.jpg" alt="Raphael Azaria's profile picture">
+                </div>
+            </div>
         </section>
 
         <section id="about">
             <h2>About Me</h2>
             <div class="about-container">
-                <p>I am computer science student specialzing in
-                    web development and c++ programming. I also have a passion for graphics design, 
-                    photography, and classical music. My goal is to create innovative solutions through coding and creativity.
-                </p>
+                <p>I am a computer science student specializing in web development and C++ programming. I also have a passion for graphics design, photography, and classical music. My goal is to create innovative solutions through coding and creativity.</p>
                 <p>My mission is to deliver exceptional services and solutions that empower my clients to achieve their goals.</p>
-            </div>     
+            </div>
         </section>
 
         <section id="services">
             <h2>My Services</h2>
-            <p>I offer a range of professional services tailored to meet your needs</p>
+            <p class="section-intro">I offer a range of professional services tailored to meet your needs.</p>
             <div class="service-container">
                 <div class="service-card">
                     <h3>Web Development</h3>
-                    <p>Building mordern, responsive, and high-perfomance websites.</p>
+                    <p>Building modern, responsive, and high-performance websites.</p>
                 </div>
                 <div class="service-card">
                     <h3>C++ Programming</h3>
-                    <p>
-                        Developing efficient and scalable software solutions
-                    </p>
+                    <p>Developing efficient and scalable software solutions.</p>
                 </div>
                 <div class="service-card">
                     <h3>Graphics Design</h3>
-                    <p>Creating visually appealing UI designs and branding materials</p>
+                    <p>Creating visually appealing UI designs and branding materials.</p>
                 </div>
             </div>
         </section>
@@ -72,49 +74,53 @@
             <h2>Projects</h2>
             <div class="project-container">
                 <div class="project-card">
-                    <img src="images/" alt="project 1">
-                    <h3>Portifolio Website</h3>
-                    <p>A personal portifolio showcasing my work and skills.</p>
+                    <img src="images/project-placeholder-1.png" alt="Portfolio Website Screenshot">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio showcasing my work and skills.</p>
                 </div>
-                <div clss="project-card">
-                    <img srcset="image/images.jpeg" alt="project 2">
-                    <h3>Task Manager Apps</h3>
-                    <p>A to do list with an intuitive UI</p>
+                <div class="project-card"> 
+                    <img src="images/project-placeholder-2.png" alt="Task Manager App Screenshot">
+                    <h3>Task Manager App</h3>
+                    <p>A to-do list with an intuitive UI.</p>
                 </div>
             </div>
         </section>
 
         <section id="blog">
-            <h2>
-                News
-            </h2>
-            <p>Stay updated with our latest News and insights</p>
+            <h2>News</h2>
+            <p class="section-intro">Stay updated with our latest News and insights.</p>
+            <!-- Blog content here -->
+            <p>Coming soon!</p>
         </section>
-
 
         <section id="contact">
             <h2>Contact Me</h2>
             <form id="contact-form" action="send_email.php" method="POST">
-                <label for="name" >Name:</label>
+                <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="John Doe" required>
+
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required>
+                <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
+
                 <label for="phone">Phone:</label>
                 <input type="tel" id="phone" name="phone" placeholder="+255123456789" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Write a brief message to describe the service you would like from me"required></textarea>
-                <button type="submit" class="cta-button">Send-Message</button>
-            </form>
-            <h3>Or reach me directly</h3>
-            <p>Email:<a href="mailto:emailexample@gmail.com">raphaeltimothyazaria@gmail.com</a></p>
-            <p>Phone:<a href="tell:+255123456789">+255676458206</a></p>
-        </section>
 
-        <footer>
-            <p>&copy; 2025 Raphael Timothy Azaria. All rights reserved</p>
-           
-        </footer>
-        
-        <script src="sript.js"></script>
-    </body>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write a brief message to describe the service you would like from me" required></textarea>
+
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+            <div class="contact-direct">
+                <h3>Or reach me directly:</h3>
+                <p>Email: <a href="mailto:raphaeltimothyazaria@gmail.com">raphaeltimothyazaria@gmail.com</a></p>
+                <p>Phone: <a href="tel:+255676458206">+255676458206</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Raphael Timothy Azaria. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
